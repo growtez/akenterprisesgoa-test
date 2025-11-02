@@ -32,7 +32,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1
 .hero-image-slider { position: absolute; top: 0; left: 0; width: 500%; height: 100%; display: flex; z-index: 0; opacity: 0.5; animation: slide-animation 16s infinite ease-in-out; }
 .hero-image-slider img { width: 20%; height: 100%; object-fit: cover; object-position: center; }
 @keyframes slide-animation { 0% { transform: translateX(0%); } 18.75% { transform: translateX(0%); } 25% { transform: translateX(-20%); } 43.75% { transform: translateX(-20%); } 50% { transform: translateX(-40%); } 68.75% { transform: translateX(-40%); } 75% { transform: translateX(-60%); } 93.75% { transform: translateX(-60%); } 100% { transform: translateX(-80%); } }
-.hero-content { position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+.hero-content { position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 2rem; }
 .hero-title { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 800; line-height: 1.15; display: flex; flex-direction: column; gap: 0.5rem; }
 .hero-overlay { background: rgba(0, 0, 0, 0.6); display: inline-block; padding: 0.2em 0.5em; border-radius: 8px; }
 .hero-title-main { color: white; text-shadow: none; font-size: 0.35em; letter-spacing: 1px;}
@@ -41,7 +41,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1
 
 /* ==================== SERVICE CHOICE CARDS ==================== */
 .service-choice-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 600px; width: 100%; }
-.service-choice-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 2rem 1.5rem; border-radius: 20px; text-decoration: none; color: var(--text-dark); transition: var(--transition); position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: var(--shadow-md); border: 2px solid rgba(255, 255, 255, 0.3); height: 100%; width: 100%;; }
+.service-choice-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 2rem 1.5rem; border-radius: 20px; text-decoration: none; color: var(--text-dark); transition: var(--transition); position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: var(--shadow-md); border: 2px solid rgba(255, 255, 255, 0.3); }
 .service-choice-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, transparent 0%, var(--light-cream) 100%); opacity: 0; transition: var(--transition); }
 .service-choice-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); background: #ffffff; }
 .service-choice-card:hover::before { opacity: 1; }
@@ -112,6 +112,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1
     .logo-title { font-size: 1.1rem; }
     .logo-subtitle { font-size: 0.65rem; }
     .logo-icon-wrapper { width: 38px; height: 38px; font-size: 1.1rem; }
+    .hero-content { margin-top: 30%; }
     .hero-title-main {font-size: 0.2em;}
     .service-choice-card { padding: 1rem 0.5rem; }
     .card-icon-wrapper { width: 45px; height: 45px; font-size: 1.3rem; }
