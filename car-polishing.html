@@ -17,14 +17,12 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="car-polishing.css">
-    <link rel="stylesheet" href="./header.css">
 </head>
 
 <body>
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
+    <header class="navbar">
+        <div class="container nav-container">
             <a href="index.html" class="logo">
                 <div class="logo-icon-wrapper">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -41,225 +39,99 @@
                 <a href="car-polishing.html" class="nav-link active">Car Polishing</a>
                 <a href="about.html" class="nav-link">About Us</a>
                 <a href="contact.html" class="nav-link">Contact Us</a>
-                <!-- <a href="tel:+917387257618" class="btn btn-primary nav-btn-desktop">
-                    <i class="fa-solid fa-phone"></i> Call Now
-                </a> -->
             </nav>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <button class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
 
     <main>
-        <!-- <section id="auto-hero" class="hero hero-auto">
-            <div class="hero-overlay"></div>
-            <div class="hero-background"></div>
-            <div class="container hero-content">
-                <div class="hero-badge">
-                    <i class="fa-solid fa-car"></i>
-                    <span>Professional Car Polishing & Detailing</span>
-                </div>
-                <h1 class="hero-title">
-                    Premium Car Polishing
-                    <br>
-                    <span class="hero-highlight">Services in Goa</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Expert car polishing, full body car washing, interior detailing, water spot removal, and paint
-                    protection. Restore your car's showroom shine
-                    with professional care.
-                </p>
-                <div class="hero-cta">
-                    <a href="tel:+919860326361" class="btn btn-primary btn-lg">
-                        <i class="fa-solid fa-phone"></i>
-                        Call Us Now
-                    </a>
-                </div>
+        <section class="hero">
+            <div class="slider">
+                <img src="assets/car-polishing/1.png" alt="Car Polishing 1" class="active">
+                <img src="assets/car-polishing/2.png" alt="Car Polishing 2">
+                <img src="assets/car-polishing/3.png" alt="Car Polishing 3">
+                <img src="assets/car-polishing/4.png" alt="Car Polishing 4">
             </div>
-            <div class="hero-scroll-indicator">
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </section> -->
-
-        <section id="auto-hero" class="hero hero-auto">
-            <div class="hero-overlay"></div>
-            <div class="hero-background"></div>
-
-            <div class="container">
-                <div class="hero-grid">
-                    
-
-                    <div class="hero-slider-wrapper">
-                        <div class="swiper hero-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/car-polishing/1.png" alt="Car Polishing Example 1">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/car-polishing/2.png" alt="Car Polishing Example 2">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/car-polishing/3.png" alt="Car Polishing Example 3">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/car-polishing/4.png" alt="Car Polishing Example 4">
-                                </div>
-                            </div>
-                            <!-- <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div> -->
-                        </div>
-                    </div>
-                    <div class="hero-text">
-                        <div class="hero-badge">
-                            <i class="fa-solid fa-car"></i>
-                            <span>Professional Car Polishing & Detailing</span>
-                        </div>
-                        <h1 class="hero-title">
-                            Car Polishing
-                            <br>
-                            <span class="hero-highlight">Services in Goa</span>
-                        </h1>
-                        <p class="hero-subtitle">
-                            Premium car polishing, full body car washing, interior detailing, water spot removal, and paint protection.
-                        </p>
-                        <div class="hero-cta">
-                            <a href="tel:+919860326361" class="btn btn-primary btn-lg">
-                                <i class="fa-solid fa-phone"></i>
-                                Call Us Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-        </section>
-
-        <section class="trust-bar">
-            <div class="container">
-                <div class="trust-items">
-                    <!-- <div class="trust-item">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span>100% Satisfaction Guarantee</span>
-                    </div> -->
-                    <div class="trust-item">
-                        <i class="fa-solid fa-award"></i>
-                        <span>Certified Professionals</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fa-solid fa-bolt"></i>
-                        <span>Same Day Service Available</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fa-solid fa-star"></i>
-                        <span>Premium Products Only</span>
-                    </div>
-                </div>
+            <div class="overlay-text">
+                <h1>Premium Car Polishing</h1>
+                <h1><span>Services in Goa</span></h1>
+                <p>Expert car polishing, full body car washing, interior detailing, water spot removal, and paint protection. Restore your car's showroom shine with professional care.</p>
+                <a href="tel:+919860326361" class="btn btn-primary">
+                    <i class="fa-solid fa-phone"></i>
+                    Call Us Now
+                </a>
             </div>
         </section>
 
-        <section id="auto-services" class="services-section">
+        <section class="services-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Our Services</span>
-                    <h2 class="section-title">Premium Car Detailing Services</h2>
-                    <p class="section-subtitle">Comprehensive solutions to protect, restore, and maintain your vehicle's
-                        pristine condition.</p>
+                    <h3>Our Services</h3>
+                    <h2>Premium Car <span class="italic">Detailing Services</span></h2>
                 </div>
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon-wrapper blue">
-                            <div class="service-icon">
-                                <i class="fa-solid fa-soap"></i>
-                            </div>
+                        <div class="service-image">
+                            <img src="assets/car-polishing/1.png" alt="Full Body Car Wash">
                         </div>
-                        <h3 class="service-title">Full Body Car Wash</h3>
-                        <p class="service-description">A meticulous hand wash using premium, pH-neutral products to
-                            safely clean your vehicle's exterior.</p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-check"></i> Premium Foam Wash</li>
-                            <li><i class="fa-solid fa-check"></i> Wheels & Tires Cleaned</li>
-                            <li><i class="fa-solid fa-check"></i> Exterior Glass Cleaned</li>
-                            <li><i class="fa-solid fa-check"></i> Quick Wax Applied</li>
-                        </ul>
-                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                        <div class="service-content">
+                            <i class="fa-solid fa-soap service-icon"></i>
+                            <h3>Full Body Car Wash</h3>
+                            <p>A meticulous hand wash using premium, pH-neutral products to safely clean your vehicle's exterior.</p>
+                            <a href="tel:+919860326361">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <!-- <div class="featured-badge">Most Popular</div> -->
-                        <div class="service-icon-wrapper green">
-                            <div class="service-icon">
-                                <i class="fa-solid fa-spray-can-sparkles"></i>
-                            </div>
+                        <div class="service-image">
+                            <img src="assets/car-polishing/2.png" alt="Car Polishing">
                         </div>
-                        <h3 class="service-title">Car Polishing</h3>
-                        <p class="service-description">Multi-stage paint correction to remove swirls, scratches, and
-                            oxidation for a mirror-like finish.</p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-check"></i> Scratch & Swirl Removal</li>
-                            <li><i class="fa-solid fa-check"></i> Gloss Enhancement</li>
-                            <li><i class="fa-solid fa-check"></i> Restores Paint Clarity</li>
-                            <li><i class="fa-solid fa-check"></i> Mirror-Like Finish</li>
-                        </ul>
-                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                        <div class="service-content">
+                            <i class="fa-solid fa-spray-can-sparkles service-icon"></i>
+                            <h3>Car Polishing</h3>
+                            <p>Multi-stage paint correction to remove swirls, scratches, and oxidation for a mirror-like finish.</p>
+                            <a href="tel:+919860326361">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon-wrapper green">
-                            <div class="service-icon">
-                                <i class="fa-solid fa-couch"></i>
-                            </div>
+                        <div class="service-image">
+                            <img src="assets/car-polishing/3.png" alt="Interior Detailing">
                         </div>
-                        <h3 class="service-title">Interior Detailing</h3>
-                        <p class="service-description">Deep cleaning and sanitization of all interior surfaces, leaving
-                            your car's cabin fresh and pristine.</p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-check"></i> Deep Vacuuming</li>
-                            <li><i class="fa-solid fa-check"></i> Upholstery & Carpet Shampoo</li>
-                            <li><i class="fa-solid fa-check"></i> Dashboard & Console Cleaning</li>
-                            <li><i class="fa-solid fa-check"></i> Odor Elimination</li>
-                        </ul>
-                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                        <div class="service-content">
+                            <i class="fa-solid fa-couch service-icon"></i>
+                            <h3>Interior Detailing</h3>
+                            <p>Deep cleaning and sanitization of all interior surfaces, leaving your car's cabin fresh and pristine.</p>
+                            <a href="tel:+919860326361">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon-wrapper red">
-                            <div class="service-icon">
-                                <i class="fa-solid fa-droplet-slash"></i>
-                            </div>
+                        <div class="service-image">
+                            <img src="assets/car-polishing/4.png" alt="Water Spot Removal">
                         </div>
-                        <h3 class="service-title">Water Spot Removal</h3>
-                        <p class="service-description">Specialized treatment to safely eliminate stubborn hard water
-                            spots from paint and glass surfaces.</p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-check"></i> Removes Mineral Deposits</li>
-                            <li><i class="fa-solid fa-check"></i> Safe for Clear Coat</li>
-                            <li><i class="fa-solid fa-check"></i> Restores Surface Clarity</li>
-                            <li><i class="fa-solid fa-check"></i> Prevents Paint Etching</li>
-                        </ul>
-                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                        <div class="service-content">
+                            <i class="fa-solid fa-droplet-slash service-icon"></i>
+                            <h3>Water Spot Removal</h3>
+                            <p>Specialized treatment to safely eliminate stubborn hard water spots from paint and glass surfaces.</p>
+                            <a href="tel:+919860326361">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon-wrapper green">
-                            <div class="service-icon">
-                                <i class="fa-solid fa-shield"></i>
-                            </div>
+                        <div class="service-image">
+                            <img src="assets/car-polishing/1.png" alt="Paint Protection">
                         </div>
-                        <h3 class="service-title">Paint Protection</h3>
-                        <p class="service-description">Application of a durable paint sealant or wax to protect your
-                            car's finish from the elements.</p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-check"></i> UV Ray Protection</li>
-                            <li><i class="fa-solid fa-check"></i> Hydrophobic Properties</li>
-                            <li><i class="fa-solid fa-check"></i> Enhances Gloss & Shine</li>
-                            <li><i class="fa-solid fa-check"></i> Long-Lasting Durability</li>
-                        </ul>
-                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                        <div class="service-content">
+                            <i class="fa-solid fa-shield service-icon"></i>
+                            <h3>Paint Protection</h3>
+                            <p>Application of a durable paint sealant or wax to protect your car's finish from the elements.</p>
+                            <a href="tel:+919860326361">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,9 +140,8 @@
         <section class="process-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Our Process</span>
-                    <h2 class="section-title">How We Work</h2>
-                    <p class="section-subtitle">Professional detailing in 4 simple steps</p>
+                    <h3>Our Process</h3>
+                    <h2>How We <span class="italic">Work</span></h2>
                 </div>
                 <div class="process-grid">
                     <div class="process-step">
@@ -278,7 +149,7 @@
                         <div class="process-icon">
                             <i class="fa-solid fa-clipboard-check"></i>
                         </div>
-                        <h3>Inspection & Assessment</h3>
+                        <h3>Inspection</h3>
                         <p>Thorough evaluation of your vehicle's condition to determine the best treatment plan.</p>
                     </div>
                     <div class="process-step">
@@ -312,17 +183,10 @@
         <section class="why-choose-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Why Choose Us</span>
-                    <h2 class="section-title">The A.K. Enterprises Difference</h2>
+                    <h3>Why Choose Us</h3>
+                    <h2>The A.K. Enterprises <span class="italic">Difference</span></h2>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-item">
-                        <!-- <div class="feature-icon">
-                            <i class="fa-solid fa-certificate"></i>
-                        </div>
-                        <h3>Certified Professionals</h3>
-                        <p>Trained and certified detailing experts with years of experience in automotive care.</p> -->
-                    </div>
                     <div class="feature-item">
                         <div class="feature-icon">
                             <i class="fa-solid fa-flask"></i>
@@ -348,62 +212,28 @@
             </div>
         </section>
 
-        <!-- <section id="auto-gallery" class="gallery-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Gallery</span>
-
-                </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">
-                            <img src="assets/car-polishing/1.jpg" alt="car-polishing-1">
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">
-                            <img src="assets/car-polishing/2.jpg" alt="car-polishing-2">
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">
-                            <img src="assets/car-polishing/3.jpg" alt="car-polishing-3">
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">
-                            <img src="assets/car-polishing/4.jpg" alt="car-polishing-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <div class="cta-text">
-                        <h2>Ready to Transform Your Vehicle?</h2>
-                        <p>Get professional car detailing services that bring back the showroom shine. Contact us today
-                            for a free quote!</p>
+                    <div>
+                        <h2>Ready to Transform <span class="italic">Your Vehicle?</span></h2>
+                        <p>Get professional car detailing services that bring back the showroom shine.</p>
                     </div>
                     <div class="cta-buttons">
-                        <a href="tel:+917387257618" class="btn btn-light btn-lg">
+                        <a href="tel:+919860326361" class="btn btn-primary">
                             <i class="fa-solid fa-phone"></i>
                             Call Now
                         </a>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="auto-contact" class="contact-section">
+        <section class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Contact Us</h2>
-                    <p class="section-subtitle">Get a quote or schedule your car polishing service today.</p>
+                    <h3>Get In Touch</h3>
+                    <h2>Contact <span class="italic">Us</span></h2>
                 </div>
                 <div class="contact-grid">
                     <a href="tel:+919860326361" class="contact-card">
@@ -427,13 +257,6 @@
                         <span class="contact-label">Location</span>
                         <span class="contact-value">Goa</span>
                     </div>
-                    <!-- <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <span class="contact-label">Working Hours</span>
-                        <span class="contact-value">8 AM - 7 PM</span>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -441,8 +264,8 @@
 
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-col">
-                <div class="logo">
+            <div>
+                <a href="index.html" class="logo">
                     <div class="logo-icon-wrapper">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
@@ -450,224 +273,50 @@
                         <span class="logo-title">A.K. Enterprises</span>
                         <span class="logo-subtitle">Goa</span>
                     </div>
-                </div>
-                <p class="footer-bio">
-                    Your trusted partner for premium home and auto services in Goa.
-                </p>
-                <div class="footer-socials">
-                    <a href="https://www.facebook.com/share/1799nV8MNb" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <!-- <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a> -->
-                </div>
+                </a>
+                <p style="margin-top: 1rem; color: rgba(255,255,255,0.8);">Your trusted partner for premium home and auto services in Goa.</p>
             </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Services</h3>
+            <div>
+                <h3>Services</h3>
                 <ul class="footer-links">
                     <li><a href="home-cleaning.html">Home Deep Cleaning</a></li>
                     <li><a href="car-polishing.html">Car Polishing</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Company</h3>
+            <div>
+                <h3>Company</h3>
                 <ul class="footer-links">
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="index.html">Our Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Contact Info</h3>
-                <ul class="footer-contact-info">
+            <div>
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
                     <li><i class="fa-solid fa-phone"></i> <a href="tel:+919860326361">+91 98603 26361</a></li>
-                    <li><i class="fa-solid fa-envelope"></i> <a
-                            href="mailto:akenterprisesverna@gmail.com">akenterprisesverna@gmail.com</a></li>
-                    <li><i class="fa-solid fa-map-marker-alt"></i> <span>Goa</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:akenterprisesverna@gmail.com">akenterprisesverna@gmail.com</a></li>
+                    <li><i class="fa-solid fa-map-marker-alt"></i> <span style="color: rgba(255,255,255,0.8);">Goa</span></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-bottom">
             <p>© <span id="current-year"></span> A.K. Enterprises. All rights reserved.</p>
-            <p>Developed by <a href="https://www.growtez.com" target="_blank"> <u>Growtez</u></a></p>
+            <p>Developed by <a href="https://www.growtez.com" target="_blank"><u>Growtez</u></a></p>
         </div>
     </footer>
 
-    <div class="floating-buttons">
+    <div class="floating-btns">
         <a href="https://wa.me/+919860326361?text=Hi!%20I%20would%20like%20to%20book%20a%20car%20detailing%20service."
-            target="_blank" class="float-btn whatsapp-btn" aria-label="Message on WhatsApp">
+            target="_blank" class="float-btn whatsapp-btn">
             <i class="fa-brands fa-whatsapp"></i>
-            <span class="float-tooltip">WhatsApp</span>
         </a>
-        <a href="tel:+919860326361" class="float-btn call-btn" aria-label="Call Now">
+        <a href="tel:+919860326361" class="float-btn call-btn">
             <i class="fa-solid fa-phone"></i>
-            <span class="float-tooltip">Call Now</span>
         </a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        // Wait for the entire HTML document to load before running any JavaScript
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // ====================================
-            // SELECTORS
-            // ====================================
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const navbar = document.getElementById('navbar');
-            const yearSpan = document.getElementById('current-year');
-
-            // ====================================
-            // MOBILE MENU
-            // ====================================
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', () => {
-                    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-                    if (navLinks.style.display === 'flex') {
-                        navLinks.style.flexDirection = 'column';
-                        navLinks.style.position = 'absolute';
-                        navLinks.style.top = '100%';
-                        navLinks.style.left = '0';
-                        navLinks.style.right = '0';
-                        navLinks.style.background = 'var(--primary-green)';
-                        navLinks.style.padding = '1rem';
-                        navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-                    }
-                });
-
-                // Close menu when clicking outside
-                document.addEventListener('click', function (event) {
-                    const isClickInsideNav = navLinks.contains(event.target);
-                    const isClickOnToggle = menuToggle.contains(event.target);
-
-                    // Check if the menu is open and the click was outside
-                    if (navLinks.style.display === 'flex' && !isClickInsideNav && !isClickOnToggle) {
-                        navLinks.style.display = 'none';
-                    }
-                });
-            }
-
-            // ====================================
-            // SMOOTH SCROLLING
-            // ====================================
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (href !== '#') {
-                        const target = document.querySelector(href);
-                        if (target) {
-                            e.preventDefault();
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                            // Close mobile menu if open and navLinks exists
-                            if (navLinks && window.innerWidth <= 968) {
-                                navLinks.style.display = 'none';
-                            }
-                        }
-                    }
-                });
-            });
-
-            // ====================================
-            // NAVBAR SCROLL EFFECT
-            // ====================================
-            if (navbar) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 50) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
-                    }
-                });
-            }
-
-            // ====================================
-            // HERO SCROLL INDICATOR
-            // ====================================
-            const scrollIndicator = document.querySelector('.hero-scroll-indicator');
-            if (scrollIndicator) {
-                scrollIndicator.addEventListener('click', () => {
-                    // Make sure the target element exists
-                    const servicesSection = document.querySelector('#auto-services');
-                    if (servicesSection) {
-                        servicesSection.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            }
-
-            // ====================================
-            // SCROLL ANIMATIONS (Intersection Observer)
-            // ====================================
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        observer.unobserve(entry.target); // Stop observing after it's visible
-                    }
-                });
-            }, observerOptions);
-
-            // Animate service cards and other elements
-            document.querySelectorAll('.service-card, .feature-item, .process-step, .testimonial-card').forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-
-            // ====================================
-            // HERO SLIDER INITIALIZATION
-            // ====================================
-            const heroSwiper = new Swiper('.hero-swiper', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-
-                // Autoplay
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-
-                // A nice fade effect
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
-
-                // Pagination (the little dots)
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            // ====================================
-            // UPDATE COPYRIGHT YEAR
-            // ====================================
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-
-        });
-
-
-    </script>
+   <script src="car-polishing.js"></script>
 </body>
 
 </html>
